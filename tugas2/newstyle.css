@@ -1,0 +1,112 @@
+body {
+    background-color: #ced6e0;
+}
+
+*{
+    list-style: none;
+    text-decoration: none;
+    -webkit-user-select: none;      
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.app-title {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+}
+
+
+.balance {
+    display: flex;
+    text-align: center;
+    padding: 30px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.image-profile {
+    border-radius: 100%;
+}
+
+.balance-money {
+    margin-left: 50px;
+    margin-top: 30px;
+    color: #4b4b4b;
+}
+
+.title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.value {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.income-bar {
+    background-color: #34ace0;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+.outcome-bar {
+    background-color:#ff5252;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+}
+
+.income-flex {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.outcome-flex {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.toggle {
+    display: flex;
+    background-color: #f7f1e3;
+    padding: 10px;
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
+
+.toggle .tab1, .tab2, .tab3{
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #1a0034;
+    font-family: 'Gilroy Bold';
+    opacity: 0.4;
+}
+
+.active{
+    opacity : 1 !important;
+}
+
+.hide{
+    display: none;
+}
+
+.input {
+    background-color: red;
+    display: flex;
+}
+
+.app-dashboard {
+    margin-top: 10px;
+}
