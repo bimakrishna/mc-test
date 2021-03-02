@@ -5,52 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Budget Application</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="newstyle.css">
 </head>
 <body>
     <div class="app-container">
         <div class="app-title">
-            <a href=""><b>BUDGET APPLICATION</b></a>
+            <b>BUDGET APPLICATION</b>
         </div>
         <div class="app-header">
+            <div class="under-app-header">
             <div class="balance">
-                <div class=title>
-                    Balance
+                <div class="image-profile">
+                    <img src="https://lh3.googleusercontent.com/proxy/-elIUxSrJRaFUJnUFs4FYQay-aUc9Y_bZPQK6xnwQPZyeJp-2BttLK43ZqgN5oqv3nY3QfuJf2tBZChEmKYJITI0YU3LvyZ3gmyZ3o9C7KaivtuoM5gI" alt="" style="width: 200px;">
                 </div>
-                <div class="value">
-                    <small>Rp.</small>0
+                <div class="balance-money">
+                    <div class=title>
+                        Balance
+                    </div>
+                    <div class="value">
+                        <small>Rp.</small>0
+                    </div>
                 </div>
             </div>
             <div class="account">
-                <div class="income">
-                    <div class="title">
-                        income
+                <div class="income-bar">
+                    <div class="income-flex">
+                    <div class="title-income">
+                        Total Income
                     </div>
                     <div class="income-total">
                         <small>Rp.</small>0
                     </div>
+                    </div>
                 </div>
                 <div class="chart">
-                    <div class="outcome">
-                        <div class="title">
-                            Outcome
+                    <div class="outcome-bar">
+                        <div class="outcome-flex">
+                        <div class="title-outcome">
+                             Total Outcome
                         </div>
                         <div class="outcome-total">
                             <small>Rp.</small>0
                         </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
             <div class="app-dashboard">
                 <div class="toggle">
-                    <div class="tab1">Expenses</div>
-                    <div class="tab2">Income</div>
-                    <div class="tab3 active">All</div>
+                    <div class="tab1">EXPENSES</div>
+                    <div class="tab2">INCOME</div>
+                    <div class="tab3 active">ALL</div>
                 </div>
                 <div class="hide" id="income">
                     <ul class="list"></ul>
                     <div class="input">
-                        <input type="text" id="income-title-input" name="title" placeholder="Title">
+                        <input type="text" id="income-title-input" name="title" placeholder="Pemasukan">
                         <input type="number" id="income-amount-input" name="amount" placeholder="Rp.">
                         <div class="add-income"><button>Add</button></div>
                     </div>
@@ -58,7 +69,7 @@
                 <div class="hide" id="expense">
                     <ul class="list"></ul>
                     <div class="input">
-                        <input type="text" id="expense-title-input" name="title" placeholder="Title">
+                        <input type="text" id="expense-title-input" name="title" placeholder="Pengeluaran">
                         <input type="number" id="expense-amount-input" name="amount" placeholder="Rp.">
                         <div class="add-expense"><button>Add</button></div>
                     </div>
@@ -69,6 +80,7 @@
             </div>
         </div>
     </div>
-    <script arc="index.js"></script>
+    <script src="index.js"></script>
+    <script src="chart.js"></script>
 </body>
 </html>
