@@ -50,7 +50,8 @@ body {
 
 .income-bar {
     background-color: #34ace0;
-    border-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
     text-align: center;
     padding: 10px;
     color: white;
@@ -58,10 +59,8 @@ body {
 
 .outcome-bar {
     background-color:#ff5252;
-    border-radius: 20px;
     text-align: center;
     padding: 10px;
-    margin-top: 10px;
     color: white;
 }
 
@@ -82,7 +81,7 @@ body {
     background-color: #f7f1e3;
     padding: 10px;
     justify-content: space-evenly;
-    border-radius: 10px;
+    border-bottom-left-radius: 20px;
 }
 
 .toggle .tab1, .tab2, .tab3{
@@ -102,11 +101,107 @@ body {
     display: none;
 }
 
-.input {
-    background-color: red;
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.input-inner {
     display: flex;
 }
 
-.app-dashboard {
+.list-expense-income {
+    background-color: #f7f1e3;
+    padding: 15px;
+    border-radius: 10px;
+    width: 65%;
+    height: 7px;
+}
+
+
+.input input#expense-title-input{
+    padding-left: 10px;
+    font-size: 1.2em;
+    margin-left: 10px;
+    border-radius: 10px 0 0 10px;
+    border: none;
+}
+
+#expense .input input#expense-amount-input{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.2em;
+    border-radius: 0 10px 10px 0;
+    border: none;
+}
+
+.button-add{
+    background-color: #34ace0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.app-dashboard #expense ul.list li #delete{
+    display: flex;
+    position: absolute;
+    width:20px;
+    height: 20px;
+    right: 20px;
+    cursor: pointer;
+    background-image: url('https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/trash-512.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+}
+
+.entry-class {
+    display: flex;
+}
+
+.expense {
+    display: flex;
+    padding: 20px;
+    background-color: #fab1a0;
+    border-bottom-left-radius: 20px ;
     margin-top: 10px;
+}
+
+.input input#income-title-input{
+    padding-left: 10px;
+    font-size: 1.2em;
+    margin-left: 10px;
+    border-radius: 10px 0 0 10px;
+    border: none;
+}
+
+#income .input input#income-amount-input{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.2em;
+    border-radius: 0 10px 10px 0;
+    border: none;
+}
+
+.income {
+    display: flex;
+    padding: 20px;
+    background-color: #74b9ff;
+    border-bottom-left-radius: 20px ;
+    margin-top: 10px;
+}
+
+.app-dashboard #income ul.list li #delete{
+    display: flex;
+    position: absolute;
+    width:20px;
+    height: 20px;
+    right: 20px;
+    cursor: pointer;
+    background-image: url('https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/trash-512.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+}
+
+.app-title{
+    font-size: 25px;
 }
