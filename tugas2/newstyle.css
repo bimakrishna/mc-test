@@ -1,5 +1,6 @@
 body {
-    background-color: #ced6e0;
+    background-image: url('https://images.unsplash.com/photo-1449247709967-d4461a6a6103?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1651&q=80');
+    background-size: 100%;
 }
 
 *{
@@ -17,6 +18,7 @@ body {
     border-radius: 10px;
     color: black;
     text-align: center;
+    box-shadow: 0px 20px 100px 0px rgba(0,0,0, .5);
 }
 
 
@@ -30,6 +32,9 @@ body {
 
 .image-profile {
     border-radius: 100%;
+    background:rgba(255,255,255,.2);
+    box-shadow: 0px 5px 15px rgba(0,0,0, .5);
+    position: relative;
 }
 
 .balance-money {
@@ -50,19 +55,20 @@ body {
 
 .income-bar {
     background-color: #34ace0;
-    border-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
     text-align: center;
     padding: 10px;
     color: white;
+
 }
 
 .outcome-bar {
     background-color:#ff5252;
-    border-radius: 20px;
     text-align: center;
     padding: 10px;
-    margin-top: 10px;
     color: white;
+
 }
 
 .income-flex {
@@ -82,7 +88,9 @@ body {
     background-color: #f7f1e3;
     padding: 10px;
     justify-content: space-evenly;
-    border-radius: 10px;
+    border-bottom-left-radius: 20px;
+    background:rgba(255,255,255,.2);
+    box-shadow: 0px 5px 15px rgba(0,0,0, .5);
 }
 
 .toggle .tab1, .tab2, .tab3{
@@ -94,6 +102,18 @@ body {
     opacity: 0.4;
 }
 
+.toggle .tab1:hover {
+    color: red;
+}
+
+.toggle .tab2:hover {
+    color: blue;
+}
+
+.toggle .tab3:hover {
+    color: black;
+}
+
 .active{
     opacity : 1 !important;
 }
@@ -102,11 +122,110 @@ body {
     display: none;
 }
 
-.input {
-    background-color: red;
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.input-inner {
     display: flex;
 }
 
-.app-dashboard {
+.list-expense-income {
+    padding: 15px;
+    border-radius: 10px;
+    width: 65%;
+    height: 7px;
+    background:rgba(255,255,255,.2);
+    box-shadow: 0px 5px 15px rgba(0,0,0, .5);
+}
+
+
+.input input#expense-title-input{
+    padding-left: 10px;
+    font-size: 1.2em;
+    margin-left: 10px;
+    border-radius: 10px 0 0 10px;
+    border: none;
+}
+
+#expense .input input#expense-amount-input{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.2em;
+    border-radius: 0 10px 10px 0;
+    border: none;
+}
+
+.button-add{
+    background-color: #34ace0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.app-dashboard #expense ul.list li #delete{
+    display: flex;
+    position: absolute;
+    width:20px;
+    height: 20px;
+    right: 20px;
+    cursor: pointer;
+    background-image: url('https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/trash-512.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+}
+
+.entry-class {
+    display: flex;
+}
+
+.expense {
+    display: flex;
+    padding: 20px;
+    border-bottom-left-radius: 20px ;
     margin-top: 10px;
+    background:rgba(255,255,255,.2);
+    box-shadow: 0px 5px 15px rgba(224, 115, 115, 0.5);
+}
+
+.input input#income-title-input{
+    padding-left: 10px;
+    font-size: 1.2em;
+    margin-left: 10px;
+    border-radius: 10px 0 0 10px;
+    border: none;
+}
+
+#income .input input#income-amount-input{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.2em;
+    border-radius: 0 10px 10px 0;
+    border: none;
+}
+
+.income {
+    display: flex;
+    padding: 20px;
+    border-bottom-left-radius: 20px ;
+    margin-top: 10px;
+    background:rgba(255,255,255,.2);
+    box-shadow: 0px 5px 15px rgba(105, 110, 212, 0.5);
+}
+
+.app-dashboard #income ul.list li #delete{
+    display: flex;
+    position: absolute;
+    width:20px;
+    height: 20px;
+    right: 20px;
+    cursor: pointer;
+    background-image: url('https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/trash-512.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+}
+
+.app-title{
+    font-size: 25px;
 }
