@@ -1,5 +1,6 @@
 body {
-    background-color: #ced6e0;
+    background-image: url('https://images.unsplash.com/photo-1449247709967-d4461a6a6103?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1651&q=80');
+    background-size: 100%;
 }
 
 *{
@@ -17,6 +18,7 @@ body {
     border-radius: 10px;
     color: black;
     text-align: center;
+    box-shadow: 0px 20px 100px 0px rgba(0,0,0, .5);
 }
 
 
@@ -30,6 +32,9 @@ body {
 
 .image-profile {
     border-radius: 100%;
+    background:rgba(255,255,255,.2);
+    box-shadow: 0px 5px 15px rgba(0,0,0, .5);
+    position: relative;
 }
 
 .balance-money {
@@ -55,6 +60,7 @@ body {
     text-align: center;
     padding: 10px;
     color: white;
+
 }
 
 .outcome-bar {
@@ -62,6 +68,7 @@ body {
     text-align: center;
     padding: 10px;
     color: white;
+
 }
 
 .income-flex {
@@ -82,6 +89,8 @@ body {
     padding: 10px;
     justify-content: space-evenly;
     border-bottom-left-radius: 20px;
+    background:rgba(255,255,255,.2);
+    box-shadow: 0px 5px 15px rgba(0,0,0, .5);
 }
 
 .toggle .tab1, .tab2, .tab3{
@@ -91,6 +100,18 @@ body {
     color: #1a0034;
     font-family: 'Gilroy Bold';
     opacity: 0.4;
+}
+
+.toggle .tab1:hover {
+    color: red;
+}
+
+.toggle .tab2:hover {
+    color: blue;
+}
+
+.toggle .tab3:hover {
+    color: black;
 }
 
 .active{
@@ -112,11 +133,12 @@ body {
 }
 
 .list-expense-income {
-    background-color: #f7f1e3;
     padding: 15px;
     border-radius: 10px;
     width: 65%;
     height: 7px;
+    background:rgba(255,255,255,.2);
+    box-shadow: 0px 5px 15px rgba(0,0,0, .5);
 }
 
 
@@ -161,9 +183,10 @@ body {
 .expense {
     display: flex;
     padding: 20px;
-    background-color: #fab1a0;
     border-bottom-left-radius: 20px ;
     margin-top: 10px;
+    background:rgba(255,255,255,.2);
+    box-shadow: 0px 5px 15px rgba(224, 115, 115, 0.5);
 }
 
 .input input#income-title-input{
@@ -185,9 +208,10 @@ body {
 .income {
     display: flex;
     padding: 20px;
-    background-color: #74b9ff;
     border-bottom-left-radius: 20px ;
     margin-top: 10px;
+    background:rgba(255,255,255,.2);
+    box-shadow: 0px 5px 15px rgba(105, 110, 212, 0.5);
 }
 
 .app-dashboard #income ul.list li #delete{
